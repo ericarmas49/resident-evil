@@ -1,0 +1,1161 @@
+html,
+body {
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+/* From here loading page */
+#preloader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fefefe;
+  z-index: 99;
+  height: 100%;
+}
+#status_div {
+  position: absolute !important;
+  left: 50%;
+  top: 50%;
+  margin: -150px 0 0 -169px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#spin_logo {
+}
+#loading_bar {
+  width: 180px;
+  height: 30px;
+  background-image: url(//cdn.wovendigitaldev.com/resident-evil/images/loading_indicator.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+#navigation-sec
+{
+  display: none;
+  background-image: url(//cdn.wovendigitaldev.com/resident-evil/images/navigation.jpg);
+  font-weight: bold;
+  width: 100%;
+  min-height: 50px;
+  position: fixed;
+  z-index: 9;
+}
+/* End here loading page */
+
+/* From here, General */
+@font-face {font-family: "Ultramagnetic";
+  src:url("../font/Ultramagnetic.ttf") format("truetype");
+}
+@font-face {font-family: "UltramagneticExtraBold";
+  src:url("../font/UltramagneticExtraBold.ttf") format("truetype");
+}
+section {
+  position: relative;
+}
+section button {
+  border: none;
+  outline:none;
+}
+.hidden {
+  display:none;
+}
+.red {
+  color: #a00f17;
+}
+.black-bg {
+  background: black;
+}
+.align-center {
+  text-align: center;
+}
+.text-content-div {
+  width: 75.18vw;
+  position: relative;
+  left: 50%;
+  margin-left: -37.59vw;
+  color: #f9f9f9;
+  font-size: 22px;
+  font-family: Ultramagnetic;
+}
+.text-title {
+  font-family: Ultramagnetic;
+  font-size: 43px;
+  font-weight: normal;
+  text-align: center;
+  margin: 0px;
+}
+.video-title {
+  font-family: Ultramagnetic;
+  font-size: 3.25vw;
+  font-weight: normal;
+  text-align: center;
+  color: #f9f9f9;
+  margin: 0px;
+}
+.video-div {
+  display: block;
+  position: relative;
+}
+.video-inner-div {
+  display: block;
+  padding-top: 56.25%;
+}
+/* End here, General */
+
+
+/* From here, Section1 (Title) */
+#parallax {
+  position: relative;
+}
+#bg-layer1 {
+  width: 100%;
+  position: relative;
+}
+#bg-layer2 {
+  position: absolute;
+  left: 42.2vw;
+  bottom: 0px;
+  width: 26.3vw;
+}
+#bg-layer3 {
+  position: absolute;
+  left: 10.5vw;
+  bottom: 0px;
+  width: 34vw;
+}
+#bg-layer4-a {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 18vw;
+}
+#bg-layer4-b {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+#bg-layer4-b #building-bg-img {
+  display: block;
+  width: 41vw;
+}
+#burning-building-div {
+  position: absolute;
+  top: 15.95vw;
+  right: 0px;
+  width: 32vw;
+  height: 50vw;
+  -ms-transform: rotate(7.2deg);
+  -webkit-transform: rotate(7.2deg);
+  transform: rotate(7.2deg);
+}
+.ani-frame {
+  position: absolute !important;
+  right: 0px;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#bg-layer5 {
+  position: absolute;
+  bottom:0px;
+}
+#bg-layer5 #character-body-img {
+  display: block;
+  width: 100vw;
+}
+#blowing-hair-div {
+  position:absolute;
+  width: 19.25vw;
+  height: 21.85vw;
+  top: 1.48vw;
+  left: 40.97vw;
+}
+
+#particles-canvas1,
+#particles-canvas2 {
+  opacity:0;
+  position: absolute;
+  bottom: 0px;
+  transition-duration: 2000ms;
+  transition-timing-function: ease;
+  transition-delay: 2000ms;
+}
+#particles-canvas1 {
+  bottom: -23vw;
+}
+
+#title-div {
+  position: fixed;
+  top: 100px;
+  width: 100%;
+  text-align: center;
+}
+#title-ul {
+  width: 36vw;
+  min-width: 310px;
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+}
+#title-ul img {
+  width: 100%;
+}
+#title-ul #milla-img {
+  padding-top: 0.5vw;
+  padding-bottom: 1.5vw;
+}
+#title-ul #in-theaters-img,
+#title-ul #imax-title-img {
+  width: 50%;
+}
+
+#scroll_down_arrow {
+  position: fixed;
+  top: 90%;
+  left: 50%;
+  margin-left: -35px;
+  font-family: Ultramagnetic;
+  color: #fff;
+  font-size: 22px;
+  z-index: 1;
+}
+#scroll_down_arrow span {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  margin-left: -21px;
+  z-index: 1;
+  width: 45px;
+  height: 45px;
+  min-height: 20px;
+  min-width: 20px;
+  border-left: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb05 1.5s infinite;
+  animation: sdb05 1.5s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb05 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-30px, 30px);
+    opacity: 0;
+  }
+}
+@keyframes sdb05 {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-30px, 30px);
+    opacity: 0;
+  }
+}
+/* End here, Top Parallax section */
+
+
+/* From here, Section2 (How did we arrive here?) */
+#sec2-div {
+  /*  background: #faf5df;*/
+  position: relative;
+  background: url(//cdn.wovendigitaldev.com/resident-evil/images/sec2-bg.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 58.78vw;
+}
+#sec2-bg-img {
+  position: absolute;
+  display: block;
+  width: 100vw;
+}
+#sec2-video-top-div {
+  background: url(//cdn.wovendigitaldev.com/resident-evil/images/sec2-video-top.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 31.13vw;
+}
+#sec2-video {
+  background: black;
+}
+.video-play-btn {
+  position: absolute;
+  background: url(//cdn.wovendigitaldev.com/resident-evil/images/play_btn.png);
+  background-size: contain;
+  width: 12.8vw;
+  height: 12.8vw;
+  top: 50%;
+  left: 50%;
+  margin-top: -6.4vw;
+  margin-left: -6.4vw;
+  border: none;
+  outline:none;
+  display: none;
+}
+#scroll_through_img {
+  position: absolute;
+  width: 26vw;
+  height: auto;
+  top: 19.64vw;
+  left: 18.39vw;
+}
+#final-nav {
+  position: absolute;
+  background: url(//cdn.wovendigitaldev.com/resident-evil/images/final-navigation.png) no-repeat;
+  background-size: contain;
+  width: 87.26vw;
+  bottom: 2.98vw;
+  left: 50%;
+  margin-left: -43.63vw;
+  display: none;
+}
+#final-nav ul {
+  margin: 0 !important;
+  padding: 3.57vw 2.38vw;
+  text-align: center;
+}
+#final-nav li {
+  list-style: none;
+  display: inline;
+  padding: 0px 5.6vw;
+  color: #FDFDFD;
+}
+#final-nav li a {
+  text-decoration: none;
+  color: #FDFDFD;
+  font-family: Ultramagnetic;
+  font-size: 1.2vw;
+}
+
+#final-nav li a:hover {
+  color: #D83921;
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+}
+
+.basic.slider {
+  padding-top: 20%;
+  margin-bottom: 0px !important;
+}
+.intro-slide-img {
+  width: 100%;
+  padding-top: 15%;
+}
+.slick-dots {
+  position: relative !important;;
+  bottom: 2vw !important;;
+}
+.slick-dots li {
+  margin: 0 10px !important;;
+}
+.slick-slide .slide-character {
+  display: inline-block !important;
+  position: relative !important;
+  width: 25% !important;
+  min-width: 160px;
+  height: auto !important;
+  float: right;
+}
+.slick-slide .slide-title {
+  display: inline-block !important;
+  width: 60% !important;
+  min-width: 280px;
+  margin-top: 2vw;
+  margin-left: 30px;
+}
+.slick-slide .slide-content {
+  margin-left: 30px !important;
+  font-family: Ultramagnetic;
+  font-size: 22px;
+  color: #333;
+}
+
+.blueberry {
+  display: none;
+  width: 100%;
+  position: relative;
+  padding-top: 20%;
+}
+.blueberry .slides {
+  height: auto !important;
+  padding: 0px;
+  margin: 0px;
+}
+
+.blueberry .slide-character {
+  display: inline-block !important;
+  position: relative !important;
+  width: 25% !important;
+  min-width: 160px;
+  height: auto !important;
+  float: right;
+}
+.blueberry .slide-title {
+  display: inline-block !important;
+  width: 60% !important;
+  min-width: 280px;
+  margin-top: 2vw;
+  margin-left: 30px;
+}
+.blueberry .slide-content {
+  margin-left: 30px !important;
+  font-family: Ultramagnetic;
+  font-size: 22px;
+  color: #333;
+}
+/* End here, Section2 */
+
+
+/* From here, Section3 (Character Evolution) */
+#sec3-div {
+  position: relative;
+  background: url(//cdn.wovendigitaldev.com/resident-evil/images/sec3-bg.jpg);
+  background-size: cover;
+  width: 100%;
+}
+#sec3-div button {
+  cursor: pointer;
+}
+#sec3-stage1-div,
+#sec3-stage2-stars-div,
+#sec3-stage2-umbrellas-div,
+#sec3-stage3-div
+{
+  position: relative;
+  top: 0px;
+  width: 100%;
+  text-align: center;
+  padding-top: 3vw;
+}
+#sec3-div .character {
+  display:inline-block;
+  text-align: center;
+  padding: 0px;
+}
+#sec3-div .back-btn {
+  background: url(//cdn.wovendigitaldev.com/resident-evil/images/arrow_left.png) no-repeat;
+  background-size: contain;
+  width: 2.5vw;
+  height: 4.5vw;
+  position: absolute;
+  left: 1vw;
+}
+#back-umbrellas-btn {
+  display: none;
+}
+#sec3-div .portrait {
+  width: 100%;
+  cursor: pointer;
+}
+#sec3-stage1-div .character {
+  width: 25%;
+  padding: 0px 40px;
+}
+.stars-btn {
+  background: url(//cdn.wovendigitaldev.com/resident-evil/images/stars_btn.png);
+  background-size: cover;
+  width: 21vw;
+  height: 6vw;
+}
+.umbrella-corp-btn {
+  background: url(//cdn.wovendigitaldev.com/resident-evil/images/umbrella_corp_btn.png);
+  background-size: cover;
+  width: 21vw;
+  height: 6vw;
+}
+#sec3-stage1-div .character-evo-title {
+  display: block;
+  margin: 0 auto;
+}
+
+.character-evo-title,
+.umbrella-corp-title {
+  width: 48vw;
+  padding-top: 1vw;
+  min-width: 310px;
+}
+
+#sec3-stage2-stars-div,
+#sec3-stage2-umbrellas-div
+{
+  display: none;
+}
+#sec3-stage2-stars-div .character,
+#sec3-stage2-umbrellas-div .character
+{
+  width: 24%;
+}
+.bad-guy-btn {
+  background: url(//cdn.wovendigitaldev.com/resident-evil/images/btn-bg.png);
+  background-size: cover;
+  width: 21vw;
+  height: 6vw;
+  font-family: Ultramagnetic;
+  font-size: 1.55vw;
+}
+
+#sec3-stage3-div {
+  display: none;
+}
+#profile-title {
+  color: #a00f17;
+  font-size: 41px;
+  font-family: Ultramagnetic;
+  text-align: left;
+}
+#profile-content {
+  color: #f9f9f9;
+  font-size: 17px;
+  font-family: Ultramagnetic;
+  text-align: left;
+  padding: 0px 10vw;
+  min-height: 20vw;
+}
+#profile-portrait {
+  width: 25%;
+  min-width: 150px;
+  cursor: default;
+  float: left;
+  margin: 4vw 3vw 0vw 2vw;
+}
+#sec3-stage3-div .character-evo-title {
+}
+
+#sec3-text-div {
+}
+#sec3-text-div p {
+  margin: 0px;
+  padding: 6vw 0px;
+}
+
+  /* End here, Section3 */
+
+
+/* From here, Section4 (Umbrella Corp Evolution) */
+#sec4-div {
+  background: url(//cdn.wovendigitaldev.com/resident-evil/images/sec4-bg.jpg);
+  background-size: 100% 100%;
+  width: 100%;
+}
+#umbrella_corp_title {
+  width: 24.35vw;
+  position: relative;
+  top: 3.57vw;
+  left: 2vw;
+}
+#timeline-div {
+  height: 77.38vw;
+  position: relative;
+}
+#timeline-div .line
+{
+  position: absolute;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+#timeline-div .line.bottom-to-top {
+  background-position: center bottom !important;
+  top: inherit;
+}
+.line.bottom-to-top,
+.line.top-to-bottom {
+  height: 0vw;
+}
+#line-top {
+  background: url(//cdn.wovendigitaldev.com/resident-evil/images/line-top.png);
+  width: 77.08vw;
+  height: 19.52vw;
+  top: 5.36vw;
+}
+#top-title {
+  display: inline-block;
+  position: absolute;
+  top: 4.5vw;
+  right: 1.5vw;
+  letter-spacing: -1px;
+  font-size: 1.43vw !important;
+}
+#line1 {
+  background: url(//cdn.wovendigitaldev.com/resident-evil/images/line1.png);
+  width: 5.18vw;
+  bottom: 33.18vw;
+  left: 5.65vw;
+}
+#line2 {
+  background: url(//cdn.wovendigitaldev.com/resident-evil/images/line2.png);
+  width: 3.45vw;
+  bottom: 33.93vw;
+  left: 30.36vw;
+}
+#line3a {
+  background: url(//cdn.wovendigitaldev.com/resident-evil/images/line3a.png);
+  width: 0.18vw;
+  bottom: 35.95vw;
+  left: 46.37vw;
+}
+#line3b {
+  background: url(//cdn.wovendigitaldev.com/resident-evil/images/line3b.png);
+  width: 0vw;
+  height: 0.18vw;
+  top: 29.05vw;
+  right: 53.21vw;
+}
+#line4 {
+  background: url(//cdn.wovendigitaldev.com/resident-evil/images/line4.png);
+  width: 0.36vw;
+  bottom: 35.95vw;
+  left: 53.63vw;
+}
+#line5 {
+  background: url(//cdn.wovendigitaldev.com/resident-evil/images/line5.png);
+  width: 2.62vw;
+  bottom: 35.95vw;
+  left: 55.60vw;
+}
+#line6 {
+  background: url(//cdn.wovendigitaldev.com/resident-evil/images/line6.png);
+  width: 5.48vw;
+  bottom: 35.95vw;
+  left: 61.67vw;
+}
+#line7 {
+  background: url(//cdn.wovendigitaldev.com/resident-evil/images/line7.png);
+  width: 5.54vw;
+  bottom: 35.95vw;
+  left: 69.64vw;
+}
+#line8 {
+  background: url(//cdn.wovendigitaldev.com/resident-evil/images/line8.png);
+  width: 0.24vw;
+  bottom: 35.95vw;
+  left: 82.26vw;
+}
+#line9 {
+  background: url(//cdn.wovendigitaldev.com/resident-evil/images/line9.png);
+  width: 0vw;
+  height: 0.24vw;
+  top: 28.87vw;
+  right: 17.22vw;
+}
+#line10 {
+  background: url(//cdn.wovendigitaldev.com/resident-evil/images/line10.png);
+  width: 0vw;
+  height: 0.3vw;
+  top: 32.32vw;
+  left: 82.38vw;
+}
+
+#red-line {
+  background: url(//cdn.wovendigitaldev.com/resident-evil/images/red-line.png);
+  width: 35.30vw;
+  height: 2.44vw;
+  top: 44.05vw;
+  left: 100vw;
+}
+#original-line {
+  background: url(//cdn.wovendigitaldev.com/resident-evil/images/original-timeline.png);
+  width: 54.7vw;
+  height: 2.5vw;
+  top: 41.31vw;
+  left: -55vw;
+}
+#alternate-line {
+  background: url(//cdn.wovendigitaldev.com/resident-evil/images/alternate-timeline.png);
+  width: 64.17vw;
+  height: 2.68vw;
+  top: 46.55vw;
+  left: -65vw;
+}
+
+#line11 {
+  background: url(//cdn.wovendigitaldev.com/resident-evil/images/line11.png);
+  width: 0.24vw;
+  top: 46.37vw;
+  left: 8.33vw;
+}
+#line12{
+  display: none;
+  background: url(//cdn.wovendigitaldev.com/resident-evil/images/line12.png);
+  width: 0vw;
+  height: 0.18vw;
+  top: 48.81vw;
+  left: 8.51vw;
+}
+#line13 {
+  background: url(//cdn.wovendigitaldev.com/resident-evil/images/line13.png);
+  width: 4.35vw;
+  top: 46.37vw;
+  left: 16.20vw;
+}
+#line14 {
+  background: url(//cdn.wovendigitaldev.com/resident-evil/images/line14.png);
+  width: 0vw;
+  height: 0.18vw;
+  top: 56.43vw;
+  left: 20.48vw;
+}
+#line15 {
+  background: url(//cdn.wovendigitaldev.com/resident-evil/images/line15.png);
+  width: 3.99vw;
+  top: 47.20vw;
+  left: 33.45vw;
+}
+#line16 {
+  background: url(//cdn.wovendigitaldev.com/resident-evil/images/line16.png);
+  width: 16.01vw;
+  top: 49.05vw;
+  left: 42.02vw;
+}
+#line17 {
+  background: url(//cdn.wovendigitaldev.com/resident-evil/images/line17.png);
+  width: 0vw;
+  height: 0.18vw;
+  top: 53.69vw;
+  left: 44.76vw;
+}
+#line18 {
+  background: url(//cdn.wovendigitaldev.com/resident-evil/images/line18.png);
+  width: 0.18vw;
+  top: 49.17vw;
+  left: 84.7vw;
+}
+#line19 {
+  background: url(//cdn.wovendigitaldev.com/resident-evil/images/line19.png);
+  width: 0vw;
+  height: 0.24vw;
+  top: 66.43vw;
+  left: 84.7vw;
+}
+#line-bottom {
+  background: url(//cdn.wovendigitaldev.com/resident-evil/images/line-bottom.png);
+  width: 86.96vw;
+  height: 18.75vw;
+  top: 56.55vw;
+  left: 0vw;
+}
+
+#timeline-div .shield
+{
+  position: absolute;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  opacity: 0;
+}
+#shield1 {
+  background: url(//cdn.wovendigitaldev.com/resident-evil/images/shield1.png);
+  width: 20.37vw;
+  height: 12.2vw;
+  top: 51.55vw;
+  left: 60.12vw;
+}
+#shield2 {
+  background: url(//cdn.wovendigitaldev.com/resident-evil/images/shield2.jpg);
+  width: 9.7vw;
+  height: 11.85vw;
+  top: 51vw;
+  left: 22.62vw;
+}
+#shield3 {
+  background: url(//cdn.wovendigitaldev.com/resident-evil/images/shield3.jpg);
+  width: 15.6vw;
+  height: 7.8vw;
+  top: 27vw;
+  left: 83.4vw;
+}
+
+@-webkit-keyframes pulse {
+  from {
+    -ms-transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    opacity: 0.75;
+  }
+  50% {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: 1.0;
+  }
+  to {
+    -ms-transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    opacity: 0.75;
+  }
+}
+#timeline-div .umbrella
+{
+  position: absolute;
+  background: url(//cdn.wovendigitaldev.com/resident-evil/images/umbrella.png);
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  width: 3.21vw;
+  height: 3.27vw;
+  opacity: 0;
+  cursor: pointer;
+/*
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+*/
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+#timeline-div .umbrella label {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+#umbrella1 {
+  top: 27.98vw;
+  left: 10.24vw;
+}
+#umbrella2 {
+  top: 34.4vw;
+  left: 27.38vw;
+}
+#umbrella3 {
+  top: 27.38vw;
+  left: 35.83vw;
+}
+#umbrella4 {
+  top: 11.43vw;
+  left: 52.2vw;
+}
+#umbrella5 {
+  top: 29.4vw;
+  left: 57.44vw;
+}
+#umbrella6 {
+  top: 19.52vw;
+  left: 59.05vw;
+}
+#umbrella7 {
+  top: 9.35vw;
+  left: 74.4vw;
+}
+#umbrella8 {
+  top: 27.38vw;
+  left: 75.3vw;
+}
+#umbrella9 {
+  top: 51.31vw;
+  left: 6.79vw;
+}
+#umbrella10 {
+  top: 62.92vw;
+  left: 13.63vw;
+}
+#umbrella11 {
+  top: 59.52vw;
+  left: 36.73vw;
+}
+#umbrella12 {
+  top: 65.48vw;
+  left: 57.2vw;
+}
+#umbrella13 {
+  top: 64.88vw;
+  left: 88.21vw;
+}
+
+
+#timeline-div .caption {
+  position: absolute;
+  width: 10.12vw;
+  opacity: 0;
+}
+#timeline-div .title {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #a00f17;
+  font-size: 1.1vw;
+  font-family: Ultramagnetic;
+  cursor: pointer;
+}
+#timeline-div .text {
+  color: #f9f9f9;
+  font-size: 0.89vw;
+  font-family: Ultramagnetic;
+  display: none;
+}
+#caption1 {
+  top: 27.98vw;
+  left: 14.29vw;
+}
+#caption2 {
+  top: 36.9vw;
+  left: 19.64vw;
+}
+#caption3 {
+  top: 30.95vw;
+  left: 32.74vw;
+}
+#caption4 {
+  top: 10.71vw;
+  left: 55.95vw;
+}
+#caption5 {
+  top: 33.63vw;
+  left: 55.95vw;
+}
+#caption6 {
+  top: 22.92vw;
+  left: 55.36vw;
+}
+#caption7 {
+  top: 9.23vw;
+  left: 78.27vw;
+}
+#caption8 {
+  top: 30.95vw;
+  left: 71.43vw;
+}
+#caption9 {
+  top: 55.36vw;
+  left: 6.55vw;
+}
+#caption10 {
+  display: none;
+  top: 48.21vw;
+  left: 11.01vw;
+}
+#caption11 {
+  top: 63.99vw;
+  left: 17.26vw;
+}
+#caption12 {
+  top: 63.1vw;
+  left: 34.52vw;
+}
+#caption13 {
+  top: 64.88vw;
+  left: 61.31vw;
+}
+#caption14 {
+  top: 58.33vw;
+  left: 86.31vw;
+}
+
+#sec4-text {
+  width: 75.18vw;
+  position: relative;
+  top: 13vw;
+  left: 50%;
+  margin-left: -37.59vw;
+}
+
+#sec4-text-div {
+}
+#sec4-text-div p {
+  margin: 0px;
+  padding: 5vw 0px;
+}
+#sec4-text-div2 {
+  background: url(//cdn.wovendigitaldev.com/resident-evil/images/sec4-bg.jpg);
+  background-size: contain;
+  width: 100%;
+  position: relative;
+  color: #f9f9f9;
+  font-size: 22px;
+  font-family: Ultramagnetic;
+  padding: 6vw 0px;
+}
+#sec4-text-div2 h2 {
+  padding: 0px 12.41vw;
+}
+#sec4-text-div2 p {
+  padding: 0px 12.41vw;
+  text-align: left;
+}
+#the-breakdown-title {
+  width: 61.24vw;
+  min-width: 310px;
+  padding-bottom: 1vw;
+}
+/* End here, Section4 */
+
+
+/* From here, Section5 (Fandemonium) */
+#sec5 {
+  background: url(//cdn.wovendigitaldev.com/resident-evil/images/sec4-bg.jpg);
+  background-size: contain;
+  width: 100%;
+  text-align: center;
+}
+#fandemonium-video-title {
+  width: 52.02vw;
+  min-width: 310px;
+  padding-bottom: 1vw;
+}
+#fandemonium-title {
+  width: 91vw;
+  padding-top: 5vw;
+}
+.accordion-slider * {
+  padding: 0px;
+}
+.accordion-slider ul {
+  list-style: none;
+  margin: 0px;
+}
+.accordion-slider li {
+  width: 20vw;
+  height: 49.4vw;
+  position: relative;
+  box-shadow: 60px 50px 100px rgba(229, 144, 1, 0.6), 0px 0px 30px rgba(229, 144, 1, 0.4);
+  background-size: cover;
+  display: table-cell;
+  text-align: left;
+}
+.accordion-slider .slide-caption {
+  position: absolute;
+  bottom: 0px;
+  padding: 1.5vw;
+  display: none;
+  color: #fff;
+}
+#sec5-text-div {
+  background: url(//cdn.wovendigitaldev.com/resident-evil/images/sec4-bg.jpg);
+  background-size: contain;
+  width: 100%;
+  position: relative;
+  color: #f9f9f9;
+  font-size: 22px;
+  font-family: Ultramagnetic;
+  padding: 6vw 0px;
+}
+#sec5-text-div p {
+  margin: 0px;
+  padding: 0px 12.41vw;
+  text-align: left;
+}
+.title-full-img {
+  padding-top: 6vw;
+  width: 59.52vw;
+  min-width: 310px;
+}
+#trailer-video-header-img {
+  padding-top: 6vw;
+  width: 67.56vw;
+  min-width: 310px;
+}
+/* End here, Section5 */
+
+/* From here, Section6 (Trailer) */
+#sec6 img {
+  display: block;
+  width: 100%;
+}
+/* End here, Section6 */
+
+
+#footer-sec {
+  width: 100%;
+  background: #CD231B;
+  height: 35px;
+}
+#footer-sec p {
+  margin: 0;
+  padding-top: 10px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 12px;
+  color: #fff;
+}
+
+
+/*****************************************
+Media Queries
+*****************************************/
+
+@media (max-width: 1024px) {
+  .text-content-div {
+    font-size: 16px;
+  }
+  .text-title {
+    font-size: 30px;
+  }
+  .slick-slide .slide-content {
+    font-size: 13px;
+  }
+  .blueberry .slide-content {
+    font-size: 13px;
+  }
+  #sec4-text-div2 {
+    font-size: 16px;
+  }
+  #sec5-text-div {
+    font-size: 16px
+  }
+  #timeline-div #top-title {
+    font-size: 16px !important;
+    right: 5px;
+  }
+  #profile-title {
+    font-size: 29px;
+  }
+  #profile-content {
+    font-size: 14px;
+  }
+
+  /* Make portrait larger on mobile devices */
+  #sec3-stage1-div .character {
+    width: 43%;
+    padding: 0px 10px;
+  }
+  .stars-btn,
+  .umbrella-corp-btn {
+    width: 42vw;
+    height: 12vw;
+  }
+}
+
+@media (max-width: 950px) {
+  #timeline-div #top-title {
+    display: none;
+  }
+  #timeline-div .caption {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .video-title {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 450px) {
+  #footer-sec p {
+    padding-top: 4px;
+  }
+}
